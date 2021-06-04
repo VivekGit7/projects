@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="icon" href="./IMAGES/icon.svg" />
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <h1>
+          Sorting Visualization
+          <img src="./IMAGES/algo.svg" height="35px" width="35px" />
+        </h1>
+      </div>
+
+      <div class="dashboard">
+        <div class="buttons">
+          <h3>Algorithms</h3>
+          <button>Bubble Sort</button>
+          <button>Insertion Sort</button>
+          <button>Heap Sort</button>
+          <button>Merge Sort</button>
+          <button>Quick Sort</button>
+          <button>Selection Sort</button>
+        </div>
+
+        <div class="box" id="array_box"></div>
+
+        <div class="limits">
+          <div class="Arraybars">
+            <h3>
+              <img src="./IMAGES/resize.svg" height="15px" width="15px" /> Array
+              Size :
+            </h3>
+            <input
+              type="range"
+              min="15"
+              max="100"
+              value="50"
+              step="1"
+              class="range-style"
+              id="range"
+            />
+          </div>
+          <div class="Arrayspeed">
+            <h3>
+              <img src="./IMAGES/speed.svg" height="15px" width="15px" />
+              Speed :
+            </h3>
+            <input
+              type="range"
+              min="1"
+              max="6"
+              value="3"
+              step="1"
+              class="range-style"
+              id="speed"
+            />
+          </div>
+          <div class="newbtn">
+            <button id="generate">Generate New Array</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Load script First -->
+
+    <script src="./JS/home.js"></script>
+    <script src="/JS/loader.js"></script>
+
+    <!-- Load Algorithms scripts -->
+
+    <script src="./ALOGORITHMS/bubble_sort.js"></script>
+    <script src="./ALOGORITHMS/selection_sort.js"></script>
+    <script src="./ALOGORITHMS/insertion_sort.js"></script>
+    <script src="./ALOGORITHMS/merge_sort.js"></script>
+    <script src="./ALOGORITHMS/quick_sort.js"></script>
+    <script src="./ALOGORITHMS/heap_sort.js"></script>
+  </body>
+</html>

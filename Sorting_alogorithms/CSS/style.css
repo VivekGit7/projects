@@ -1,0 +1,146 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h3 {
+  color: #1d4375;
+}
+.page {
+  background-image: url("../IMAGES/graph.svg");
+  display: flex;
+  flex-direction: column;
+  background-color: #35a2d4;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: right 2% bottom 7%;
+}
+
+.header {
+  font-weight: 600;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 15px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dashboard {
+  display: flex;
+  width: 90%;
+  height: 75vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 15px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box {
+  display: flex;
+  flex: 2;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 5px;
+  transform: rotate(180deg) scaleX(-1);
+}
+
+.buttons {
+  flex: 1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+  color: #1d4375;
+  width: 70%;
+  height: 45px;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 500;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.1)
+  );
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background: linear-gradient(125deg, rgb(69, 151, 218), rgb(255, 255, 255));
+  cursor: pointer;
+}
+
+.selected_btn {
+  background: linear-gradient(125deg, rgb(69, 151, 218), rgb(255, 255, 255));
+}
+
+.Bars {
+  width: 4px;
+  background-color: #1d4375;
+  border-radius: 5px;
+  display: inline;
+  margin: 0 1px;
+}
+
+.limits {
+  flex: 1;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+  position: relative;
+  top: 10%;
+}
+
+.Arraybars {
+  width: 80%;
+}
+
+.Arrayspeed {
+  width: 80%;
+}
+
+.newbtn {
+  margin-top: 10px;
+}
+
+/* slider css........ */
+.range-style {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: -2px -2px 8px white, 2px 2px 8px rgba(black, 0.5);
+  background: rgb(0, 70, 117);
+  cursor: pointer;
+}
