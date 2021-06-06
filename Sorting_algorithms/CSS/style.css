@@ -63,7 +63,6 @@ h3 {
 .buttons {
   flex: 1;
   display: flex;
-  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -82,6 +81,7 @@ button {
   width: 70%;
   height: 45px;
   padding: 12px;
+  /* margin: 10px; */
   border-radius: 25px;
   border: none;
   font-weight: 500;
@@ -116,11 +116,11 @@ button:hover {
 
 .limits {
   flex: 1;
-  /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-  position: relative;
+  display: flex;
+  flex-direction: column;
   top: 10%;
+  position: relative;
+  margin-left: 10px;
 }
 
 .Arraybars {
@@ -135,6 +135,15 @@ button:hover {
   margin-top: 10px;
 }
 
+.stopbtn {
+  display: none;
+  margin-top: 20px;
+}
+
+.showstop {
+  display: block;
+}
+
 /* slider css........ */
 .range-style {
   width: 100%;
@@ -143,4 +152,34 @@ button:hover {
   box-shadow: -2px -2px 8px white, 2px 2px 8px rgba(black, 0.5);
   background: rgb(0, 70, 117);
   cursor: pointer;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 620px) {
+  .dashboard {
+    display: block;
+    height: 100vh;
+  }
+  .box {
+    height: 20%;
+  }
+  .limits {
+    top: 2%;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  button {
+    margin: 5px;
+  }
+  .newbtn {
+    margin-top: 2;
+    display: flex;
+    width: 80%;
+    margin: 5px;
+  }
+  .stopbtn {
+    margin-top: 5px;
+  }
 }

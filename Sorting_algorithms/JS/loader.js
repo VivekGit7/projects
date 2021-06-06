@@ -8,6 +8,8 @@ var delay_time = 10000 / (Math.floor(array_size / 10) * speed);
 
 var c_delay = 0;
 
+var stop_btn = document.getElementById('Stop');
+
 function Animation_speed() {
     var selected_speed = in_speed.value;
     switch (parseInt(selected_speed)) {
@@ -40,6 +42,18 @@ function enable_buttons() {
         }
     }, c_delay += delay_time);
 }
+
+//stop animation
+
+stop_btn.addEventListener("click", stop_Animation);
+
+function stop_Animation() {
+    c_delay = 0;
+    enable_buttons();
+    update_array_size();
+    stop_btn.classList.remove("showstop");
+}
+
 
 // function enable_buttons() {
 //     for (var i = 0; i < algo_btns.length; i++) {

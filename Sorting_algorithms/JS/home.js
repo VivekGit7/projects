@@ -67,6 +67,7 @@ function executeAlogrithm() {
     disable_buttons();
 
     this.classList.add("selected_btn");
+    stop_btn.classList.add("showstop");
 
     console.log(this.innerHTML);
 
