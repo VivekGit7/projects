@@ -68,6 +68,7 @@ function executeAlogrithm() {
 
     this.classList.add("selected_btn");
     stop_btn.classList.add("showstop");
+    in_generate.classList.add("genbtn");
 
     console.log(this.innerHTML);
 

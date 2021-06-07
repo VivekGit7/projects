@@ -39,6 +39,8 @@ function enable_buttons() {
             in_range.disabled = false;
             in_speed.disabled = false;
             in_generate.disabled = false;
+            stop_btn.classList.remove("showstop");
+            in_generate.classList.remove("genbtn");
         }
     }, c_delay += delay_time);
 }
@@ -51,7 +53,6 @@ function stop_Animation() {
     c_delay = 0;
     enable_buttons();
     update_array_size();
-    stop_btn.classList.remove("showstop");
 }
 
 
@@ -69,7 +70,7 @@ function stop_Animation() {
 
 function update_div(c_div, height, colour) {
     window.setTimeout(function () {
-        c_div.style = " margin:0% " + margin_size + "%; border-radius: 5px; width:" + (100 / array_size - (2 * margin_size)) + "%; height:" + height + "%; background-color:" + colour + ";";
+        c_div.style = " margin: 0% " + margin_size + "%; border-radius: 5px; width:" + (100 / array_size - (2 * margin_size)) + "%; height:" + (1.2 * height) + "%; background-color:" + colour + ";";
     }, c_delay += delay_time);
 }
 
