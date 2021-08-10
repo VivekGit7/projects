@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".findcity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/backbtn"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search City"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/white"
+        />
+
+
+    <EditText
+        android:id="@+id/searchcity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittextback"
+        android:gravity="center"
+        android:hint="ENTER CITY NAME"
+        android:imeOptions="actionGo"
+        android:inputType="textAutoCorrect"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/findicon"
+        android:src="@drawable/ic_baseline_search_24"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/searchcity" />
+
+
+</RelativeLayout>
