@@ -30,7 +30,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class MainActivity extends AppCompatActivity {
 
-    final String API_ID = "488d31289470cd2322d0ea5d70272b73";
+    final String API_ID = "Yourapi id...";
     final String WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather";
 
     final long MIN_TIME = 5000;
