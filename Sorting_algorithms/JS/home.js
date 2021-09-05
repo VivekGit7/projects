@@ -30,12 +30,23 @@ in_range.addEventListener("input", update_array_size);
 function array_geterate() {
     container.innerHTML = "";
 
-    for (var i = 0; i < array_size; i++) {
-        div_sizes[i] = Math.floor(Math.random() * 0.5 * (in_range.max - in_range.min)) + 10;
-        divs[i] = document.createElement("div");
-        container.appendChild(divs[i]);
-        margin_size = 0.1;
-        divs[i].style = " margin:0% " + margin_size + "%; background-color: #144c96; border-radius: 5px; width:" + (100 / array_size - (2 * margin_size)) + "%; height:" + (1.2 * div_sizes[i]) + "%;";
+    if (array_size < 25) {
+        for (var i = 0; i < array_size; i++) {
+            div_sizes[i] = Math.floor(Math.random() * 0.7 * (in_range.max - in_range.min + 10)) + 5;
+            divs[i] = document.createElement("div");
+            container.appendChild(divs[i]);
+            margin_size = 0.1;
+            divs[i].style = " margin:0% " + margin_size + "%; text-align:center; transform: rotate(180deg) scaleX(-1); background-color: #144c96; border-radius: 5px; width:" + (100 / array_size - (2 * margin_size)) + "%; height:" + (1.2 * div_sizes[i]) + "%;";
+            divs[i].innerHTML = "<span style='font-size:100%;'>" + div_sizes[i] + "</span>";
+        }
+    } else {
+        for (var i = 0; i < array_size; i++) {
+            div_sizes[i] = Math.floor(Math.random() * 0.7 * (in_range.max - in_range.min + 10)) + 5;
+            divs[i] = document.createElement("div");
+            container.appendChild(divs[i]);
+            margin_size = 0.1;
+            divs[i].style = " margin:0% " + margin_size + "%; background-color: #144c96; border-radius: 5px; width:" + (100 / array_size - (2 * margin_size)) + "%; height:" + (1.2 * div_sizes[i]) + "%;";
+        }
     }
 }
 

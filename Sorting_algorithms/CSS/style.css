@@ -22,6 +22,13 @@ h3 {
   background-position: right 2% bottom 7%;
 }
 
+.credit{
+  position: absolute;
+  bottom: 0px;
+  right:0px;
+
+}
+
 .header {
   font-weight: 600;
   text-align: center;
@@ -59,7 +66,9 @@ h3 {
   justify-content: center;
   margin: 5px;
   transform: rotate(180deg) scaleX(-1);
+
 }
+
 
 .buttons {
   flex: 1;
