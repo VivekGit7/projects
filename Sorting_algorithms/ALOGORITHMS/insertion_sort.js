@@ -53,5 +53,5 @@ function Insertion_sort() {
     }
     update_div(divs[i - 1], div_sizes[i - 1], "#15c415"); //green
 
-    enable_buttons();
+    // enable_buttons();
 }

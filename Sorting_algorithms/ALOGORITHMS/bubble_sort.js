@@ -50,7 +50,7 @@ function Bubble_sort() {
     }
     update_div(divs[0], div_sizes[0], "#15c415"); //green
 
-    enable_buttons();
+    // enable_buttons();
 
 }
 

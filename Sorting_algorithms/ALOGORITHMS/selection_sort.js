@@ -30,7 +30,7 @@ function Selection_sort() {
     }
     update_div(divs[i], div_sizes[i], "#15c415"); //green
 
-    enable_buttons();
+    // enable_buttons();
 }
 
 

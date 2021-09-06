@@ -85,16 +85,22 @@ function executeAlogrithm() {
 
     switch (this.innerHTML) {
         case "Bubble Sort": Bubble_sort();
+            enable_buttons();
             break;
         case "Insertion Sort": Insertion_sort();
+            enable_buttons();
             break;
         case "Heap Sort": Heap_sort();
+            enable_buttons();
             break;
         case "Merge Sort": Merge_sort();
+            enable_buttons();
             break;
         case "Quick Sort": Quick_sort();
+            enable_buttons();
             break;
         case "Selection Sort": Selection_sort();
+            enable_buttons();
             break;
     }
 

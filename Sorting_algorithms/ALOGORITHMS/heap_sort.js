@@ -4,7 +4,7 @@ function Heap_sort() {
 
     heap();
 
-    enable_buttons();
+    // enable_buttons();
 }
 
 function heap() {

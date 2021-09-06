@@ -3,7 +3,7 @@ function Quick_sort() {
 
     quick(0, array_size - 1);
 
-    enable_buttons();
+    // enable_buttons();
 }
 
 function quick(start, end) {

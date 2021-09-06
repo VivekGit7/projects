@@ -3,7 +3,7 @@ function Merge_sort() {
 
     merge_partition(0, array_size - 1);
 
-    enable_buttons();
+    // enable_buttons();
 }
 
 function merge_partition(start, end) {
