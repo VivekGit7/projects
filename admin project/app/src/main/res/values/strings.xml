@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!--    <string name="app_name">Easy Admin</string>-->
+
+    <string-array name="role">
+        <item>Select Role</item>
+        <item>Student</item>
+        <item>Faculty</item>
+        <item>Principal</item>
+        <item>HOD</item>
+    </string-array>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="easy_admin">Easy Admin</string>
+    <string name="welcome_to_easy_admin">Welcome to Easy Admin</string>
+    <string name="todo">TODO</string>
+</resources>

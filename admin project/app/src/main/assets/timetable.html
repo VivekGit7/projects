@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        td,th,h1 {text-align: center;}
+        body{
+            background-color: rgb(79, 170, 206);
+        }
+        table,th,td{
+            border: 1px solid black;
+            border-color: rgb(34, 41, 134); 
+        }
+        td,th{
+            padding: 50dp;
+            margin: 50dp;
+        }
+        table{
+            width:100%;
+        }
+        .time{
+            overflow-x: auto;
+        }
+    </style>
+    <title>table</title>
+</head>
+<body>
+    <H1>Time Table</H1>
+
+    <div class="time" align="center">
+        <table >
+            <tr>
+                <th rowspan="2" >P & T</th>
+                <th>1</th>
+                <th>2</th>
+                <th rowspan="8">Recess</th>
+                <th>3</th>
+                <th>4</th>
+                <th rowspan="8">Recess</th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+            <tr>
+                <th>8:30 to 9:30</th>
+                <th>9:30 to 10:30</th>
+                <th>10:45 to 11:45</th>
+                <th>11:45 to 12:45</th>
+                <th>1:30 to 2:30</th>
+                <th>2:30 to 3:30</th>
+            </tr>
+            <tr>
+                <th>MON</th>
+                <td colspan="2">MI (LAB)</td>
+                <td>TOC</td>
+                <td>IOT</td>
+                <td>AJ</td>
+                <td>CPD</td>
+            </tr>
+            <tr>
+                <th>TUE</th>
+                <td colspan="2">IOT (LAB)</td>
+                <td>TOC</td>
+                <td>TOC (T)</td>
+                <td>MI</td>
+                <td>WP</td>
+            </tr>
+            <tr>
+                <th>WED</th>
+                <td colspan="2">AJ (LAB)</td>
+                <td>WP</td>
+                <td>AJ</td>
+                <td>CPD</td>
+                <td>TOC</td>
+            </tr>
+            <tr>
+                <th>THU</th>
+                <td colspan="2">WP (LAB)</td>
+                <td>MI</td>
+                <td>IOT</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <th>FRI</th>
+                <td colspan="2">IOT (LAB)</td>
+                <td>MI</td>
+                <td>WP</td>
+                <td>TOC</td>
+                <td>AJ</td>
+            </tr>
+            <tr>
+                <th>SAT</th>
+                <td colspan="2">DE (LAB)</td>
+                <td colspan="2">DE (LAB)</td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
