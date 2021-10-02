@@ -1,0 +1,208 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-size: 35%;
+  background-position: right 5% bottom 10%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  position: absolute;
+  max-width: 700px;
+  height: 500px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row {
+  height: 100%;
+  position: relative;
+  border-radius: 25px;
+}
+
+.fcard {
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right_part {
+  position: relative;
+  background: linear-gradient(45deg, rgb(69, 151, 218), rgb(209, 68, 209));
+  border-radius: 25px;
+  height: 100%;
+  padding: 25px;
+  color: white;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.left_part {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  height: auto;
+  padding: 25px;
+  font-size: 13px;
+}
+
+.right_part header {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.left_part header {
+  color: blueviolet;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.left_part .finput {
+  width: 250px;
+  border-radius: 25px;
+  padding: 12px;
+  border: none;
+  margin-bottom: 15px;
+  padding-left: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right_part .finput {
+  width: 250px;
+  border-radius: 25px;
+  padding: 12px;
+  border: none;
+  margin-bottom: 15px;
+  padding-left: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.left_part .material-icons {
+  position: relative;
+  color: blueviolet;
+  left: 40px;
+  top: 6px;
+}
+
+.right_part .material-icons {
+  position: relative;
+  color: blueviolet;
+  left: 40px;
+  top: 6px;
+}
+
+.left_part .finput:focus {
+  outline: none;
+}
+
+.left_part .button:focus {
+  outline: none;
+}
+
+.right_part .button:focus {
+  outline: none;
+}
+
+.right_part .finput:focus {
+  outline: none;
+}
+
+.right_part .button:focus {
+  outline: none;
+}
+
+.right_part .button:focus {
+  outline: none;
+}
+
+.box1 .box2 {
+  position: relative;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+.myform {
+  margin-top: 20px;
+  position: relative;
+  right: 12px;
+}
+
+.left_part .button {
+  background: linear-gradient(45deg, rgb(69, 151, 218), rgb(209, 68, 209));
+  width: 250px;
+  position: relative;
+  border-radius: 25px;
+  padding: 12px;
+  left: 12px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right_part .button {
+  background: linear-gradient(45deg, rgb(138, 159, 228), rgb(216, 235, 252));
+  width: 150px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* for home.php */
+
+.button {
+  background: linear-gradient(45deg, rgb(69, 151, 218), rgb(209, 68, 209));
+  width: 250px;
+  position: relative;
+  border-radius: 25px;
+  padding: 12px;
+  left: 12px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background: linear-gradient(45deg, rgb(69, 151, 218), rgb(255, 255, 255));
+}
+
+.left_part .button:hover {
+  background: linear-gradient(45deg, rgb(69, 151, 218), rgb(255, 255, 255));
+}
+
+.right_part .button:hover {
+  background: linear-gradient(45deg, rgb(138, 159, 228), rgb(132, 189, 240));
+}
+
+.icon {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.icon img {
+  width: 35px;
+  border-radius: 50%;
+  margin: 0 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#register {
+  display: none;
+}
+
+#infol {
+  display: none;
+}
