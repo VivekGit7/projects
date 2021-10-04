@@ -31,6 +31,7 @@ h4,h3,h2,h1 {
     display: flex;
     min-height: 90vh;
     width: 75%;
+    backdrop-filter: blur(3px);
     background: linear-gradient(
         to right bottom, 
         rgba(255,255,255,0.6),
