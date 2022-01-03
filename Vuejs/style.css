@@ -4,17 +4,35 @@
 
 body{
     text-align: center;
-    background-color: rgb(22, 164, 207) ;
+    background-color: #56CCF2;
 }
 
 .title{
-    background-color: antiquewhite;
+    background: white;
     border-radius: 10px;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255,0.6),
+        rgba(255,255,255,0.3)
+        );
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 10px;
 }
 
 .topbar{
-    background-color: antiquewhite;
+    background-color: white;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255,0.6),
+        rgba(255,255,255,0.3)
+        );
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     margin: 10px;
 }
@@ -23,7 +41,16 @@ body{
     align-items: center;
     /* justify-content: center; */
     display: flex;
-    background-color: antiquewhite;
+    background-color: white;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255,0.6),
+        rgba(255,255,255,0.3)
+        );
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: left;
     border-radius: 10px;
     margin: 10px;
@@ -47,6 +74,7 @@ body{
 .type-box{
     height: 40px;
     width: 40px;
+    border-radius: 5px;
     margin: 5px;
 }
 
@@ -55,15 +83,30 @@ body{
     margin: 5px;
 }
 
-button{
+input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.subbtn,    button{
     width: 120px;
     padding: 10px;
     margin: 3px;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255,0.6),
+        rgba(255,255,255,0.3)
+        );
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cart{
-    border: solid black;  
-    box-sizing: border-box;
+    /* border:;  
+    box-sizing: border-box; */
+    padding: 5px;
     border-radius: 10px;
     text-align: center;
     width: 100px;
@@ -71,6 +114,15 @@ button{
     /* float:right; */
     margin-left:auto;
     margin-right:0;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255,0.6),
+        rgba(255,255,255,0.3)
+        );
+    /* border-radius: 15px; */
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 img{    

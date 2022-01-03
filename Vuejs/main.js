@@ -69,7 +69,7 @@ Vue.component('product', {
                 },
                 {
                     typeid: 3,
-                    typecolor: 'lightblue',
+                    typecolor: 'blue',
                     typeimage: './t-shirt2.svg',
                     typequantity: 0
                 }
@@ -137,7 +137,7 @@ Vue.component('product-review', {
     </p>
 
     <p>
-        <input type="submit" value="Submit">
+        <input type="submit"  class="subbtn" value="Submit">
     </p>
 
     </form>
