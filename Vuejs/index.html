@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Homepage</h1>
+    </div>
+    <div id="app">
+        <div class="topbar">
+            <div class="cart">
+                <p>Cart [{{item.length}}]</p>
+            </div> 
+        </div>
+        <product :premium="premium" @add-to-cart="Updatecart"></product>
+        <!-- <product  @add-to-cart="Updatecart"></product> -->
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
