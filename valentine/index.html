@@ -20,7 +20,9 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
-            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
         .container {
@@ -33,6 +35,10 @@
             text-align: center;
             position: relative;
             animation: fadeIn 0.8s ease-in;
+            overflow-y: auto;
+            max-height: 90vh;
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
         }
 
         @keyframes fadeIn {
@@ -143,6 +149,8 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
         }
 
         .yes-button {
@@ -232,6 +240,13 @@
                 font-size: 1rem;
                 padding: 12px 24px;
             }
+            .container {
+                padding: 30px 20px;
+                max-height: 85vh;
+            }
+            body {
+                padding: 10px;
+            }
         }
 
         .messages {
@@ -270,7 +285,7 @@
                 <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Bear Kisses" style="width: 200px; height: auto; border-radius: 15px;">
             </div>
             <p style="font-size: 1.3rem; color: #ff6b9d; margin-top: 20px; font-weight: bold;">
-                You just made me the happiest!!! 💖
+                You just made me the happiest! 💖
             </p>
         </div>
     </div>
