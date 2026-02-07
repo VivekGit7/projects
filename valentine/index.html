@@ -207,7 +207,7 @@
             width: 10px;
             height: 10px;
             background: #ff6b9d;
-            position: absolute;
+            top: -50px;
             animation: confettiFall 3s linear;
         }
 
@@ -263,7 +263,7 @@
 
         <div id="success-section" class="hidden success-message">
             <div class="celebration">🎉💕🎊</div>
-            <h1>Thank You Sweetheart!!! 🥰</h1>
+            <h1>Yay! 🥰</h1>
             <p class="question">Knew you would say yes!</p>
             <div class="bear-container">
                 <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Bear Kisses" style="width: 200px; height: auto; border-radius: 15px;">
@@ -351,7 +351,6 @@
 
         function createConfetti() {
             const hearts = ['💕', '💖', '💗', '💓', '💝', '❤️', '💘'];
-            const container = document.querySelector('.container');
             
             for (let i = 0; i < 10; i++) {
                 const heart = document.createElement('div');
@@ -361,7 +360,7 @@
                 heart.style.background = 'transparent';
                 heart.style.fontSize = '24px';
                 heart.style.animationDelay = Math.random() * 2 + 's';
-                container.appendChild(heart);
+                document.body.appendChild(heart);
                 
                 setTimeout(() => heart.remove(), 3000);
             }
